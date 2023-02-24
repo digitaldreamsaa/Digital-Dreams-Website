@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://prettier.io/docs/en/install.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Install · Prettier</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Docusaurus"><meta name="description" content="First, install Prettier locally:"><meta name="docsearch:version" content="stable"><meta name="docsearch:language" content="en"><meta property="og:title" content="Install · Prettier"><meta property="og:type" content="website"><meta property="og:url" content="https://prettier.io/index.html"><meta property="og:description" content="First, install Prettier locally:"><meta property="og:image" content="https://prettier.io/icon.png"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://prettier.io/icon.png"><link rel="shortcut icon" href="./config.file_files/icon.png"><link rel="stylesheet" href="./config.file_files/docsearch.min.css"><link rel="stylesheet" href="./config.file_files/default.min.css"><link rel="alternate" type="application/atom+xml" href="https://prettier.io/blog/atom.xml" title="Prettier Blog ATOM Feed"><link rel="alternate" type="application/rss+xml" href="https://prettier.io/blog/feed.xml" title="Prettier Blog RSS Feed"><script id="twitter-wjs" src="./config.file_files/widgets.js.download"></script><script async="" src="./config.file_files/analytics.js.download"></script><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-111350464-1', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="./config.file_files/wide.css"><script type="text/javascript" src="./config.file_files/buttons.js.download"></script><script type="text/javascript" src="./config.file_files/clipboard.min.js.download"></script><script type="text/javascript" src="./config.file_files/code-block-buttons.js.download"></script><script src="./config.file_files/scrollSpy.js.download"></script><link rel="stylesheet" href="./config.file_files/prism.css"><link rel="stylesheet" href="./config.file_files/main.css"><script src="./config.file_files/codetabs.js.download"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://prettier.io/"><img class="logo" src="./config.file_files/icon.png" alt="Prettier"><h2 class="headerTitleWithLogo">Prettier</h2></a><a href="https://prettier.io/versions.html"><h3>stable</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://prettier.io/playground/" target="_self">Playground</a></li><li class="siteNavGroupActive"><a href="https://prettier.io/docs/en/index.html" target="_self">Docs</a></li><li class=""><a href="https://prettier.io/blog/" target="_self">Blog</a></li><li class="navSearchWrapper reactNavSearchWrapper"><span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="text" id="search_input_react" placeholder="Search" title="Search" class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-labelledby="search_input_react" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Arial; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 300; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span></li><li class=""><a href="https://opencollective.com/prettier" target="_self">Donate</a></li><li class=""><a href="https://github.com/prettier/prettier" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Usage</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">About</h3><ul class=""><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/index.html">What is Prettier?</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/why-prettier.html">Why Prettier?</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/comparison.html">Prettier vs. Linters</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/option-philosophy.html">Option Philosophy</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/rationale.html">Rationale</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Usage</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="https://prettier.io/docs/en/install.html">Install</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/ignore.html">Ignoring Code</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/integrating-with-linters.html">Integrating with Linters</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/precommit.html">Pre-commit Hook</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/plugins.html">Plugins</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/cli.html">CLI</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/api.html">API</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/browser.html">Browser</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Configuring Prettier</h3><ul class=""><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/options.html">Options</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/configuration.html">Configuration File</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Editors</h3><ul class=""><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/editors.html">Editor Integration</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/webstorm.html">WebStorm Setup</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/vim.html">Vim Setup</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/watching-files.html">Watching For Changes</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Misc</h3><ul class=""><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/technical-details.html">Technical Details</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/related-projects.html">Related Projects</a></li><li class="navListItem"><a class="navItem" href="https://prettier.io/docs/en/for-enterprise.html">For Enterprise</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/prettier/prettier/edit/main/docs/install.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Install</h1></header><article><div><span><p>First, install Prettier locally:</p>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-16-tab-17" class="nav-link active" data-group="group_16" data-tab="tab-group-16-content-17">npm</div><div id="tab-group-16-tab-18" class="nav-link" data-group="group_16" data-tab="tab-group-16-content-18">yarn</div></div><div class="tab-content"><div id="tab-group-16-content-17" class="tab-pane active" data-group="group_16" tabindex="-1"><div><span><pre class="code-block-with-actions"><code class="hljs css language-bash">npm install --save-dev --save-exact prettier<br></code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+</span></div></div><div id="tab-group-16-content-18" class="tab-pane" data-group="group_16" tabindex="-1"><div><span><pre class="code-block-with-actions"><code class="hljs css language-bash">yarn add --dev --exact prettier<br></code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+</span></div></div></div></div>
+<p>Then, create an empty config file to let editors and other tools know you are using Prettier:</p>
+<!-- Note: `echo "{}" > .prettierrc.json` would result in `"{}"<SPACE>` on Windows. The below version works in cmd.exe, bash, zsh, fish. -->
+<pre class="code-block-with-actions"><code class="hljs css language-bash"><span class="hljs-built_in">echo</span> {}&gt; .prettierrc.json
+</code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+<p>Next, create a <a href="https://prettier.io/docs/en/ignore.html">.prettierignore</a> file to let the Prettier CLI and editors know which files to <em>not</em> format. Here’s an example:</p>
+<pre class="code-block-with-actions"><code class="hljs"><span class="hljs-comment"># Ignore artifacts:</span>
+<span class="hljs-keyword">build
+</span>coverage
+</code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+<blockquote>
+<p>Tip! Base your .prettierignore on .gitignore and .eslintignore (if you have one).</p>
+</blockquote>
+<blockquote>
+<p>Another tip! If your project isn’t ready to format, say, HTML files yet, add <code>*.html</code>.</p>
+</blockquote>
+<p>Now, format all files with Prettier:</p>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-19-tab-20" class="nav-link active" data-group="group_19" data-tab="tab-group-19-content-20">npm</div><div id="tab-group-19-tab-21" class="nav-link" data-group="group_19" data-tab="tab-group-19-content-21">yarn</div></div><div class="tab-content"><div id="tab-group-19-content-20" class="tab-pane active" data-group="group_19" tabindex="-1"><div><span><pre class="code-block-with-actions"><code class="hljs css language-bash">npx prettier --write .<br></code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+<blockquote>
+<p>What is that <code>npx</code> thing? <code>npx</code> ships with <code>npm</code> and lets you run locally installed tools. We’ll leave off the <code>npx</code> part for brevity throughout the rest of this file!</p>
+<p>Note: If you forget to install Prettier first, <code>npx</code> will temporarily download the latest version. That’s not a good idea when using Prettier, because we change how code is formatted in each release! It’s important to have a locked down version of Prettier in your <code>package.json</code>. And it’s faster, too.</p>
+</blockquote>
+</span></div></div><div id="tab-group-19-content-21" class="tab-pane" data-group="group_19" tabindex="-1"><div><span><pre class="code-block-with-actions"><code class="hljs css language-bash">yarn prettier --write .<br></code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+<blockquote>
+<p>What is <code>yarn</code> doing at the start? <code>yarn prettier</code> runs the locally installed version of Prettier. We’ll leave off the <code>yarn</code> part for brevity throughout the rest of this file!</p>
+</blockquote>
+</span></div></div></div></div>
+<p><code>prettier --write .</code> is great for formatting everything, but for a big project it might take a little while. You may run <code>prettier --write app/</code> to format a certain directory, or <code>prettier --write app/components/Button.js</code> to format a certain file. Or use a <em>glob</em> like <code>prettier --write "app/**/*.test.js"</code> to format all tests in a directory (see <a href="https://github.com/mrmlnc/fast-glob#pattern-syntax">fast-glob</a> for supported glob syntax).</p>
+<p>If you have a CI setup, run the following as part of it to make sure that everyone runs Prettier. This avoids merge conflicts and other collaboration issues!</p>
+<pre class="code-block-with-actions"><code class="hljs css language-bash">npx prettier --check .
+</code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+<p><code>--check</code> is like <code>--write</code>, but only checks that files are already formatted, rather than overwriting them. <code>prettier --write</code> and <code>prettier --check</code> are the most common ways to run Prettier.</p>
+<h2><a class="anchor" aria-hidden="true" id="set-up-your-editor"></a><a href="https://prettier.io/docs/en/install.html#set-up-your-editor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set up your editor</h2>
+<p>Formatting from the command line is a good way to get started, but you get the most from Prettier by running it from your editor, either via a keyboard shortcut or automatically whenever you save a file. When a line has gotten so long while coding that it won’t fit your screen, just hit a key and watch it magically be wrapped into multiple lines! Or when you paste some code and the indentation gets all messed up, let Prettier fix it up for you without leaving your editor.</p>
+<p>See <a href="https://prettier.io/docs/en/editors.html">Editor Integration</a> for how to set up your editor. If your editor does not support Prettier, you can instead <a href="https://prettier.io/docs/en/watching-files.html">run Prettier with a file watcher</a>.</p>
+<blockquote>
+<p><strong>Note:</strong> Don’t skip the regular local install! Editor plugins will pick up your local version of Prettier, making sure you use the correct version in every project. (You wouldn’t want your editor accidentally causing lots of changes because it’s using a newer version of Prettier than your project!)</p>
+<p>And being able to run Prettier from the command line is still a good fallback, and needed for CI setups.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="eslint-and-other-linters"></a><a href="https://prettier.io/docs/en/install.html#eslint-and-other-linters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ESLint (and other linters)</h2>
+<p>If you use ESLint, install <a href="https://github.com/prettier/eslint-config-prettier#installation">eslint-config-prettier</a> to make ESLint and Prettier play nice with each other. It turns off all ESLint rules that are unnecessary or might conflict with Prettier. There’s a similar config for Stylelint: <a href="https://github.com/prettier/stylelint-config-prettier">stylelint-config-prettier</a></p>
+<p>(See <a href="https://prettier.io/docs/en/comparison.html">Prettier vs. Linters</a> to learn more about formatting vs linting, <a href="https://prettier.io/docs/en/integrating-with-linters.html">Integrating with Linters</a> for more in-depth information on configuring your linters, and <a href="https://prettier.io/docs/en/related-projects.html">Related projects</a> for even more integration possibilities, if needed.)</p>
+<h2><a class="anchor" aria-hidden="true" id="git-hooks"></a><a href="https://prettier.io/docs/en/install.html#git-hooks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git hooks</h2>
+<p>In addition to running Prettier from the command line (<code>prettier --write</code>), checking formatting in CI, and running Prettier from your editor, many people like to run Prettier as a pre-commit hook as well. This makes sure all your commits are formatted, without having to wait for your CI build to finish.</p>
+<p>For example, you can do the following to have Prettier run before each commit:</p>
+<ol>
+<li>Install <a href="https://github.com/typicode/husky">husky</a> and <a href="https://github.com/okonet/lint-staged">lint-staged</a>:</li>
+</ol>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-22-tab-23" class="nav-link active" data-group="group_22" data-tab="tab-group-22-content-23">npm</div><div id="tab-group-22-tab-24" class="nav-link" data-group="group_22" data-tab="tab-group-22-content-24">yarn</div></div><div class="tab-content"><div id="tab-group-22-content-23" class="tab-pane active" data-group="group_22" tabindex="-1"><div><span><pre class="code-block-with-actions"><code class="hljs css language-bash">npm install --save-dev husky lint-staged<br>npx husky install<br>npm pkg <span class="hljs-built_in">set</span> scripts.prepare=<span class="hljs-string">"husky install"</span><br>npx husky add .husky/pre-commit <span class="hljs-string">"npx lint-staged"</span><br></code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+</span></div></div><div id="tab-group-22-content-24" class="tab-pane" data-group="group_22" tabindex="-1"><div><span><pre class="code-block-with-actions"><code class="hljs css language-bash">yarn add --dev husky lint-staged<br>npx husky install<br>npm pkg <span class="hljs-built_in">set</span> scripts.prepare=<span class="hljs-string">"husky install"</span><br>npx husky add .husky/pre-commit <span class="hljs-string">"npx lint-staged"</span><br></code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+<blockquote>
+<p>If you use Yarn 2, see <a href="https://typicode.github.io/husky/#/?id=yarn-2">https://typicode.github.io/husky/#/?id=yarn-2</a></p>
+</blockquote>
+</span></div></div></div></div>
+<ol start="2">
+<li>Add the following to your <code>package.json</code>:</li>
+</ol>
+<pre class="code-block-with-actions"><code class="hljs css language-json">{
+  <span class="hljs-attr">"lint-staged"</span>: {
+    <span class="hljs-attr">"**/*"</span>: <span class="hljs-string">"prettier --write --ignore-unknown"</span>
+  }
+}
+</code><div class="code-block-actions"><button class="code-block-copy-button" type="button" aria-label="Copy code to clipboard"><svg class="code-block-copy-button__icon code-block-copy-button__icon--copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="code-block-copy-button__icon code-block-copy-button__icon--copied" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></button></div></pre>
+<blockquote>
+<p>Note: If you use ESLint, make sure lint-staged runs it before Prettier, not after.</p>
+</blockquote>
+<p>See <a href="https://prettier.io/docs/en/precommit.html">Pre-commit Hook</a> for more information.</p>
+<h2><a class="anchor" aria-hidden="true" id="summary"></a><a href="https://prettier.io/docs/en/install.html#summary" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Summary</h2>
+<p>To summarize, we have learned to:</p>
+<ul>
+<li>Install an exact version of Prettier locally in your project. This makes sure that everyone in the project gets the exact same version of Prettier. Even a patch release of Prettier can result in slightly different formatting, so you wouldn’t want different team members using different versions and formatting each other’s changes back and forth.</li>
+<li>Add a <code>.prettierrc.json</code> to let your editor know that you are using Prettier.</li>
+<li>Add a <code>.prettierignore</code> to let your editor know which files <em>not</em> to touch, as well as for being able to run <code>prettier --write .</code> to format the entire project (without mangling files you don’t want, or choking on generated files).</li>
+<li>Run <code>prettier --check .</code> in CI to make sure that your project stays formatted.</li>
+<li>Run Prettier from your editor for the best experience.</li>
+<li>Use <a href="https://github.com/prettier/eslint-config-prettier">eslint-config-prettier</a> to make Prettier and ESLint play nice together.</li>
+<li>Set up a pre-commit hook to make sure that every commit is formatted.</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="https://prettier.io/docs/en/rationale.html"><span class="arrow-prev">← </span><span>Rationale</span></a><a class="docs-next button" href="https://prettier.io/docs/en/ignore.html"><span>Ignoring Code</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="https://prettier.io/docs/en/install.html#set-up-your-editor" class="active">Set up your editor</a></li><li><a href="https://prettier.io/docs/en/install.html#eslint-and-other-linters">ESLint (and other linters)</a></li><li><a href="https://prettier.io/docs/en/install.html#git-hooks" class="">Git hooks</a></li><li><a href="https://prettier.io/docs/en/install.html#summary" class="">Summary</a></li></ul></nav></div><footer class="footerSection nav-footer" id="footer"><section class="sitemap"><a href="https://prettier.io/" class="nav-home"><img src="./config.file_files/icon.png" alt="Prettier"></a><div><h5>Docs</h5><a href="https://prettier.io/docs/en/index.html">About</a><a href="https://prettier.io/docs/en/install.html">Usage</a><br><a href="https://www.netlify.com/"><img src="./config.file_files/netlify-color-accent.svg"></a></div><div><h5>Community</h5><a href="https://prettier.io/en/users">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/prettier" target="_blank" rel="noopener noreferrer">Stack Overflow</a><a href="https://twitter.com/PrettierCode">@PrettierCode on Twitter</a><object type="image/svg+xml" data="./config.file_files/prettiercode.svg"><a href="https://twitter.com/intent/follow?screen_name=prettiercode"><img alt="Follow Prettier on Twitter" src="./config.file_files/prettiercode.png"></a></object></div><div><h5>More</h5><a href="https://prettier.io/blog">Blog</a><a href="https://github.com/prettier/prettier">GitHub</a><a href="https://github.com/prettier/prettier/issues">Issues</a><span></span></div></section></footer></div><script type="text/javascript" src="./config.file_files/docsearch.min.js.download"></script><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '9fcdb2a62af4c47cc5eecf3d5a747818',
+                indexName: 'prettier',
+                inputSelector: '#search_input_react'
+              });
+            </script><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./config.file_files/widget_iframe.b80857eee4ff5ba14bb5ed6cd4f37d43.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./config.file_files/saved_resource.html"></iframe></body></html>
