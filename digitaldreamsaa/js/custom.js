@@ -1,6 +1,8 @@
 function toggle(){
     document.getElementById("mobile").style.height = "100%";
     document.getElementById("mobile").style.width = "100%";
+    document.getElementById("mobile").style.display = "block";
+	
 }
 function closeNav(){
     document.getElementById("mobile").style.height = "0px";
@@ -134,10 +136,11 @@ function calculateTallestSlide() {
 // Declare a function that will change the slide position
 function moveSlides(direction) {
     for (var j = 0; j < slides.length; j++) {
-        if (direction == "backward") {
-            slides[j].style.left = +slides[j].style.left.replace(/[^-\d\.]/g, '') + slideWidth + "px";
-        } else if (direction == "forward") {
+        // if (direction == "backward") {
+            // slides[j].style.left = +slides[j].style.left.replace(/[^-\d\.]/g, '') + slideWidth + "px";
+        // } else if (direction == "forward") {
             slides[j].style.left = +slides[j].style.left.replace(/[^-\d\.]/g, '') - slideWidth + "px";
         }
     }
+    setTimeout(moveSlides, 2000);
 }

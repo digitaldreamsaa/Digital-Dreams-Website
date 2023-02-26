@@ -24,12 +24,12 @@ require("validate.php")
             <ul>
                 <li><a href="./index.php">Home</a></li>
                 <li><a href="./the_dream.php">The Dream</a></li>
-                <li><a href="">Portfolio</a></li>
+                <li><a href="./portfolio.php">Portfolio</a></li>
                 <li class="dropdown"><a href="./services.php" class="dropbtn">Services</a>
                     <ul class="dropdown-content">
-                        <li><a href="">Graphic & Media Solutions</a></li>
-                        <li><a href="">Marketing Solutions</a></li>
-                        <li><a href="">Web Solutions</a></li>
+                        <li><a href="./service-page.php?type=graphic-media-solution">Graphic & Media Solutions</a></li>
+                        <li><a href="./service-page.php?type=marketing-solution">Marketing Solutions</a></li>
+                        <li><a href="./service-page.php?type=web-solution">Web Solutions</a></li>
                     </ul>
                 </li>
                 <li class="current"><a href="./contact.php" class="dropbtn">Contact</a></li>
@@ -42,37 +42,32 @@ require("validate.php")
               <span class="bar"></span>
             </a>
           </button>
-          <ul id="mobile" class="mobile-menu">
+          <ul id="mobile" class="mobile-menu" style="display:none">
             <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-            <li class="current""><a href="./index.php">Home</a></li>
+            <li><a href="./index.php">Home</a></li>
             <li><a href="./the_dream.php">The Dream</a></li>
             <li><a href="">Portfolio</a></li>
             <li class="dropdown"><a href="./services.php" class="dropbtn">Services</a>
                 <ul class="dropdown-content">
-                    <li><a href="">Graphic & Media Solutions</a></li>
-                    <li><a href="">Marketing Solutions</a></li>
-                    <li><a href="">Web Solutions</a></li>
+                <li><a href="./service-page.php?type=graphic-media-solution">Graphic & Media Solutions</a></li>
+                <li><a href="./service-page.php?type=marketing-solution">Marketing Solutions</a></li>
+                <li><a href="./service-page.php?type=web-solution">Web Solutions</a></li>
                 </ul>
             </li>
-            <li><a href="./contact.php" class="dropbtn">Contact</a>              
+            <li class="current"><a href="./contact.php" class="dropbtn">Contact</a>              
             </li>
             <a href="" alt="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </ul>
-        <a href="#">
+        <a href="./contact.php">
             <button id="quote">
                 Get A Free Quote
             </button>
         </a>
     </header>
-    <span class="social-list">
-                <a href="" alt="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    </span>
+    <?php require("header.php"); ?>
     <section id="seven">
         <h1>Let's Talk</h1>
         <br>
@@ -84,12 +79,10 @@ require("validate.php")
             <li>Emails</li>
             <a href=""><li>digitaldreamsaa@gmail.com</li></a>
             <li>Social Media</li>
-            <span class="social-list">
                 <a href="" alt="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </span>
         </ul>
         <form class="quote" action="./sent.php" method="post">
             <div>
@@ -104,10 +97,6 @@ require("validate.php")
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Email Address" value="<?php echo $email;?>">
                 <span class="error">* <?php echo $emailErr;?></span>
-                <br><br>
-                <label for="website">Website</label>
-                <input type="website" name="website" placeholder="Website Address" value="<?php echo $website;?>">
-                <span class="error">* <?php echo $websiteErr;?></span>
                 <br><br>
             </div>
             <div class="checkbox">

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+$thisPage = "Service-Page";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,22 +16,22 @@
         <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>  
-<header>
+<body>
+    <header>
         <a href="./index.php"><img src="../img/IMG_1467.JPG" alt="Digital Dreams"></a>
         <nav>
             <ul>
                 <li><a href="./index.php">Home</a></li>
                 <li><a href="./the_dream.php">The Dream</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li class="dropdown"><a href="./services.php" class="dropbtn">Services</a>
+                <li><a href="./portfolio.php">Portfolio</a></li>
+                <li class="dropdown current"><a href="./services.php" class="dropbtn">Services</a>
                     <ul class="dropdown-content">
-                        <li><a href="tab-1">Graphic & Media Solutions</a></li>
-                        <li><a href="tab-2">Marketing Solutions</a></li>
-                        <li><a href="tab-3">Web Solutions</a></li>
+                        <li class="nocurrent"><a href="./service-page.php?type=graphic-media-solution">Graphic & Media Solutions</a></li>
+                        <li class="nocurrent"><a href="./service-page.php?type=marketing-solution">Marketing Solutions</a></li>
+                        <li class="nocurrent"><a href="./service-page.php?type=web-solution">Web Solutions</a></li>
                     </ul>
                 </li>
-                <li class="current"><a href="./contact.php" class="dropbtn">Contact</a></li>
+                <li><a href="./contact.php" class="dropbtn">Contact</a></li>
             </ul>
         </nav>
         <button onclick="toggle()" id="tb" class="toggle-button">
@@ -38,16 +41,16 @@
               <span class="bar"></span>
             </a>
           </button>
-          <ul id="mobile" class="mobile-menu">
+          <ul id="mobile" class="mobile-menu" style="display:none">
             <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-            <li class="current""><a href="./index.php">Home</a></li>
+            <li><a href="./index.php">Home</a></li>
             <li><a href="./the_dream.php">The Dream</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li class="dropdown"><a href="./services.php" class="dropbtn">Services</a>
-                <ul class="dropdown-content tabs">
-                    <li><a href="tab-1">Graphic & Media Solutions</a></li>
-                    <li><a href="tab-2">Marketing Solutions</a></li>
-                    <li><a href="tab-3">Web Solutions</a></li>
+            <li><a href="./portfolio.php">Portfolio</a></li>
+            <li class="dropdown current"><a href="./services.php" class="dropbtn">Services</a>
+                <ul class="dropdown-content">
+                    <li class="nocurrent"><a href="./service-page.php?type=graphic-media-solution">Graphic & Media Solutions</a></li>
+                    <li class="nocurrent"><a href="./service-page.php?type=marketing-solution">Marketing Solutions</a></li>
+                    <li class="nocurrent"><a href="./service-page.php?type=web-solution">Web Solutions</a></li>
                 </ul>
             </li>
             <li><a href="./contact.php" class="dropbtn">Contact</a>              
@@ -57,63 +60,119 @@
             <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </ul>
-        <a href="#">
+        <a href="./contact.php">
             <button id="quote">
                 Get A Free Quote
             </button>
         </a>
     </header>
-    <?php require("header.php"); ?> 
+	<?php 
+	
+	$page = basename($_SERVER['PHP_SELF']); // Get script filename without any path information
+$page = str_replace( array( '.php', '.htm', '.html' ), '', $page ); // Remove extensions
+$page = str_replace( array('-', '_'), ' ', $page); // Change underscores/hyphens to spaces
+$page = ucwords( $page ); // uppercase first letter of every word
+
+
+?>
+    <?php require("header.php"); ?>   
     <section id="seven">
-    <div class="container">
-        <ul class="tabs">
-            <li><a href="tab-1">Jules Verne</a></li>
-            <li><a href="tab-2">Jack London</a></li>
-            <li><a href="tab-3">Edgar Rice Burroughs</a></li>
+    <?php if($_GET['type']=="graphic-media-solution"){?>
+            <div id="tab-1">
+                <h1>Graphics & Media Solutions</h1>
+                <img src="../img/gr.jfif" alt="Graphic Design" class="serv">
+                <br>
+                <p>A good business logo does three things:</p>
+                <br>
+                <br>
+                <p>Establish Trust</p>
+                <p>Make Recognition Easier</p>
+                <p>Attract Your Customers</p>
+                <br>
+                <br>
+                <br>
+                <p>So when a company does not have a logo that fits, it can be the source for confusion, poor impressions, and even lost business. 
+                    Attracting the right customers starts with how your company presents itself. Everything your company presents to your clients 
+                    and prospects paints a picture of who you are. From the colors and fonts you use to how you word your advertisements and 
+                    information pieces, each piece tells part of the story.</p>
+                <br>
+                <br>
+                <br>
+                <div class="gallery">
+                    <a href="./img/1.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/1-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/2.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/2-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/3.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/3-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/4.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/4-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/5.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/5-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/6.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/6-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/7.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/7-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/8.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/8-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/9.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/9-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/10.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/10-small.jpg" width="200px" height="200px" alt=""></a>
+                </div>
+            </div>
+			<?php } if($_GET['type']=="marketing-solution") {?>
+            <div id="tab-2">
+                <h1>Marketing Solution</h1>
+                <img src="../img/gr.jfif" alt="Marketing" class="serv">
+                <br>
+                <p>Not only do we make websites, we build brands. Specializing in Integrated Marketing so that you will have a consistent platform for all of your Social Media Accounts.</p>
+                <br>
+                <br>
+                <p>Here at Digital Dreams Advertising Agency, we make sure that you have proficient content for your Instagram page.</p>
+                <p>Here at Digital Dreams Advertising Agency, we are extremely diverse when it comes to social media. Let us help you integrate your ideas.</p>
+                <p>Here at Digital Dreams Advertising Agency, we also focus on Twitter. We know this is extremely popular for a more college based audience.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="gallery">
+                    <a href="./img/1.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/1-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/2.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/2-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/3.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/3-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/4.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/4-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/5.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/5-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/6.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/6-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/7.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/7-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/8.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/8-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/9.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/9-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/10.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/10-small.jpg" width="200px" height="200px" alt=""></a>
+                </div>
+            </div>
+			<?php } if($_GET['type']=="web-solution"){?>
+            <div id="tab-3">
+                <h1>Web Solutions</h1>
+                <img src="../img/gr.jfif" alt="Web Solutions" class="serv">
+                <p>We Have Web Designers That Specialize in Shopify, Wix, WordPress and other In-demand Web tools. You can Either Select from our Templates or Discuss an Idea with Us from Scratch. We Also Specialize In Custom Web Development using HTML, CSS, & JavaScript.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="gallery">
+                    <a href="./img/1.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/1-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/2.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/2-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/3.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/3-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/4.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/4-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/5.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/5-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/6.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/6-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/7.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/7-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/8.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/8-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/9.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/9-small.jpg" width="200px" height="200px" alt=""></a>
+                    <a href="./img/10.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/10-small.jpg" width="200px" height="200px" alt=""></a>
+                </div>
+            </div>
+			<?php } ?>
+        <ul class="tab-contents2">
+			<?php if($_GET['type']=="graphic-media-solution"){?>
+            
+			<?php } if($_GET['type']=="marketing-solution") {?>
+            
+			<?php } if($_GET['type']=="web-solution"){?>
+            
+			<?php } ?>
         </ul>
-        <ul class="tab-contents">
-            <li id="tab-1">
-                <p>The train entered the State of Nevada through the Carson Valley about nine o'clock, going always
-                    northeasterly; and at midday reached Reno, where there was a delay of twenty minutes for breakfast.
-                </p>
-
-                <p>From this point the road, running along Humboldt River, passed northward for several miles by its
-                    banks; then it turned eastward, and kept by the river until it reached the Humboldt Range, nearly at
-                    the extreme eastern limit of Nevada.</p>
-            </li>
-            <li id="tab-2">
-                <p>"For one day longer the despatches continued to come from New York. Then they, too, ceased. The man
-                    who had sent them, perched in his lofty building, had either died of the plague or been consumed in
-                    the great conflagrations he had described as raging around him. And what had occurred in New York
-                    had been duplicated in all the other cities. It was the same in San Francisco, and Oakland, and
-                    Berkeley. By Thursday the people were dying so rapidly that their corpses could not be handled, and
-                    dead bodies lay everywhere. Thursday night the panic outrush for the country began. Imagine, my
-                    grandsons, people, thicker than the salmon-run you have seen on the Sacramento river, pouring out of
-                    the cities by millions, madly over the country, in vain attempt to escape the ubiquitous death. You
-                    see, they carried the germs with them. Even the airships of the rich, fleeing for mountain and
-                    desert fastnesses, carried the germs.</p>
-
-                <p>"Hundreds of these airships escaped to Hawaii, and not only did they bring the plague with them, but
-                    they found the plague already there before them. This we learned, by the despatches, until all order
-                    in San Francisco vanished, and there were no operators left at their posts to receive or send. It
-                    was amazing, astounding, this loss of communication with the world. It was exactly as if the world
-                    had ceased, been blotted out. For sixty years that world has no longer existed for me. I know there
-                    must be such places as New York, Europe, Asia, and Africa; but not one word has been heard of
-                    them&mdash;not in sixty years. With the coming of the Scarlet Death the world fell apart,
-                    absolutely, irretrievably. Ten thousand years of culture and civilization passed in the twinkling of
-                    an eye, 'lapsed like foam.'</p>
-            </li>
-            <li id="tab-3">
-                <p>"And what, think you, may have been the fate of the princess, Dejah Thoris?" I asked as casually as
-                    possible.</p>
-
-                <p>"She is dead," he answered. "This much was learned from a green warrior recently captured by our
-                    forces in the south. She escaped from the hordes of Thark with a strange creature of another world,
-                    only to fall into the hands of the Warhoons. Their thoats were found wandering upon the sea bottom
-                    and evidences of a bloody conflict were discovered nearby."</p>
-            </li>
-        </ul>
-    </div> <!-- end container -->
     </section>
     <section id="six">
         <p>"Styles come and go. Good design is a language, not a style"</p>
@@ -127,7 +186,9 @@
                 Learn More
             </button>
         </a>
-    </section>    
-    <?php require("footer.php"); ?> 
+    </section>
+    <?php require("footer.php"); ?>       
 </body>
 </html>
+       
+    

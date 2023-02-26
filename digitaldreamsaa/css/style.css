@@ -270,7 +270,7 @@ section#six{
     text-align: center;
     background-color: #000000;
 }
-section#six p{
+section#six p, blockquote{
     font-size: 35px;
     font-family: monospace;
     font-weight: lighter;
@@ -307,6 +307,22 @@ section#seven p{
     flex-wrap: wrap;
     justify-content: center;
     width: 50%;
+}
+section#seven img.serv{
+    width: 75%;
+    height: 300px;
+}
+input[type=text],
+input[type="email"], input[type="phone"] {
+    width: 400px;
+    height: 30px;
+    padding: 4px;
+}
+
+textarea {
+    width: 500px;
+    height: 120px;
+    padding: 4px;
 }
 /*****Grid CSS*****/
 .grid-container{
@@ -658,7 +674,6 @@ footer{
         }
     
     blockquote {
-        color: #636363;
         font-weight: 300;
         font-style: italic;
         margin-bottom: 1.5em;
@@ -680,9 +695,9 @@ footer{
     /* Nav */
     #prev,
     #next {
-        position: absolute;
+        /* position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%); */
         z-index: 999999;
         display: inline-block;
         height: 5em;
@@ -704,4 +719,47 @@ footer{
     }
     
     #next:hover { background-image: url('arrow-right-over.svg'); }
+    /* Expanding Gallery*/
+#gallery{
     
+    margin-top: 5%;
+    width: 100%;
+
+}
+.gallery img:hover{
+    transform: scale(1.05);
+}
+#gallery .gallery{
+    
+    
+}
+.gallery a:nth-child(1n + 10){
+    max-height: 0;
+    display: none;
+    transition: 0.2s ease-in;
+}
+.gallery #btnBox{
+    display: none;
+}
+.gallery #btnBox:checked~a:nth-child(1n+10){
+    max-height: 1000px;
+    display: inline-block;
+    transition: 0.2s ease-in;
+}
+.btn2{
+    display: none;
+}
+.gallery #btnBox:checked~.btn2{
+    display: block;
+}
+.gallery #btnBox:checked~.btn1{
+    display: none;
+}
+#gallery .gallery img{
+    transition: 0.5s;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    transition-timing-function: ease-out;
+    
+}
