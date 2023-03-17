@@ -40,7 +40,7 @@ $thisPage = "Portfolio";
             </a>
           </button>
           <ul id="mobile" class="mobile-menu" style="display:none">
-            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
             <li><a href="./index.php">Home</a></li>
             <li><a href="./the_dream.php">The Dream</a></li>
             <li class="current"><a href="./portfolio.php">Portfolio</a></li>
@@ -81,19 +81,6 @@ $thisPage = "Portfolio";
             <a href="./img/9.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/9-small.jpg" width="200px" height="200px" alt=""></a>
             <a href="./img/10.jpg" data-lightbox="mygallery" data-title="Hehehe"><img src="./img/10-small.jpg" width="200px" height="200px" alt=""></a>
         </div>
-    </section>  
-    <section id="six">
-        <p>"Styles come and go. Good design is a language, not a style"</p>
-    </section>
-    <section id="four">
-        <h1>It's Always The Right Time time!</h1>
-        <p>Let's Get Your Creative Juices Flowing So Your Business Can Thrive</p>
-        <hr>
-        <p>We Work Endlessly To Help You Reach A Desired Outcome That <br>Will Be Sure To Set You Apart!</p><a href="#">
-            <button id="learn">
-                Learn More
-            </button>
-        </a>
     </section>
     <?php require("footer.php"); ?>   
 </body>

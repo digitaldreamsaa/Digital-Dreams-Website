@@ -73,9 +73,11 @@ function test_input($data) {
 }
 
 // create instance o fphpmailer
-$mail = new PHPMailer();
+$mail = new PHPMailer(true);
 // * set mailer to use smtp
 $mail->isSMTP();
+
+$mail->SMTPDebug = 2;
 //* define smtp host
 $mail->Host = "smtp.gmail.com";
 // Enable smtp auth
@@ -87,18 +89,19 @@ $mail->Port = "587";
 //  * set gmail username
 $mail->Username = "chawneangelo@gmail.com";
 //  * set gmail password
-$mail->Password = "rjjzirhfokodkzyp";
+$mail->Password = "";
 //  * set semail subjec
 $mail->Subject = "Form Submission";
 //  * set sender email
 $mail->addReplyTo("chawne@digitaldreamsaa.com");
 //  * email body
+$mail->isHTML(true);
 $mail->Body = "<h1>It's Always The Right Time time!</h1>
 <p>Let's Get Your Creative Juices Flowing So Your Business Can Thrive</p>
 <hr>
 <p>We Work Endlessly To Help You Reach A Desired Outcome That <br>Will Be Sure To Set You Apart!</p>";
 //  * add recipient
-$mail->addAddress($email);
+$mail->addAddress("digitaldreamsaa@gmail.com");
 $mail->addAttachment("../img/lsd.jpg");
 //  * Finally send email
 if ( $mail->Send() ) {

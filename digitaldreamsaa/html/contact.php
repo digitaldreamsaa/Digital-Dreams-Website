@@ -43,7 +43,7 @@ require("validate.php")
             </a>
           </button>
           <ul id="mobile" class="mobile-menu" style="display:none">
-            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
             <li><a href="./index.php">Home</a></li>
             <li><a href="./the_dream.php">The Dream</a></li>
             <li><a href="">Portfolio</a></li>
@@ -75,62 +75,41 @@ require("validate.php")
         <p>Send Us Some Information on What You Need and then Schedule a Consultation to Talk with Us!</p>
         <ul>
             <li>Phone</li>
-            <a href=""><li>470-767-6901</li></a>
+            <a href="tel: 470-767-6901"><li>470-767-6901</li></a>
             <li>Emails</li>
-            <a href=""><li>digitaldreamsaa@gmail.com</li></a>
+            <a href="mailto: digitaldreamsaa@gmail.com"><li>digitaldreamsaa@gmail.com</li></a>
             <li>Social Media</li>
-                <a href="" alt="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="" alt="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </ul>
-        <form class="quote" action="./sent.php" method="post">
+        <form class="quote" action="./validate.php" method="post">
             <div>
-                <label for="name">First Name</label>
                 <input type="text" name="firstName" placeholder="First Name" value="<?php echo $firstName;?>">
                 <span class="error">* <?php echo $firstNameErr;?></span>
                 <br><br>
-                <label for="name">Last Name</label>
                 <input type="text" name="lastName" placeholder="Last Name" value="<?php echo $lastName;?>">
                 <span class="error">* <?php echo $lastNameErr;?></span>
                 <br><br>
-                <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Email Address" value="<?php echo $email;?>">
                 <span class="error">* <?php echo $emailErr;?></span>
                 <br><br>
             </div>
             <div class="checkbox">
-                <label for="checkbox">Choose What Services Best Fits Your Needs</label>
                 <input type="checkbox" name="service" <?php if (isset($service) && $service=="Web Development") echo "checked";?> value="Web Development">Web Development
                 <input type="checkbox" name="service" <?php if (isset($service) && $service=="Web Maintenance") echo "checked";?> value="Web Maintenance" id="">Web Maintenance
                 <input type="checkbox" name="service" <?php if (isset($service) && $service=="Branding") echo "checked";?> value="Branding" id="">Branding
                 <input type="checkbox" name="service" <?php if (isset($service) && $service=="Social Media Marketing") echo "checked";?> value="Social Media Marketing" id="">Social Media Marketing
                 <input type="checkbox" name="service" <?php if (isset($service) && $service=="Ad Campaign") echo "checked";?> value="Ad Campaign" id="">Ad Campaign
                 <input type="checkbox" name="service" <?php if (isset($service) && $service=="Brand Consultation") echo "checked";?> value="Brand Consultation" id="">Brand Consultation
+                <span class="error">* <?php echo $serviceErr;?></span>
             </div>
             <div>
                 <textarea name="message" placeholder="Enter any specific details..."></textarea>
             </div>
-            <a href="#">
-                <button id="learn">
-                    Get A Quote
-                </button>
-            </a>
+            <button> Submit</button>
         </form>
-    </section>
-    <section id="six">
-        <p>"Styles come and go. Good design is a language, not a style"</p>
-    </section>
-    <section id="four">
-        <h1>It's Always The Right Time time!</h1>
-        <p>Let's Get Your Creative Juices Flowing So Your Business Can Thrive</p>
-        <hr>
-        <p>We Work Endlessly To Help You Reach A Desired Outcome That <br>Will Be Sure To Set You Apart!</p>
-        <a href="#">
-            <button id="learn">
-                Learn More
-            </button>
-        </a>
     </section>
     <?php require("footer.php")?>
 </body>

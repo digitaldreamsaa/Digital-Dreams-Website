@@ -6,7 +6,7 @@
     padding: 0;
 }
 /* Style all font awesome icons */
-.fa {
+/* .fa {
     transform: translate(750px, -50px);
     padding: 20px;
     font-size: 30px;
@@ -14,7 +14,7 @@
     text-align: center;
     text-decoration: none;
     color: white;
-  }
+  } */
 button{
     cursor:pointer;
 }
@@ -259,6 +259,9 @@ section#five li{
     font-family: 'Enriqueta', serif;
     padding: 5px;
 }
+section#five li a{
+    color: white;
+}
 section#five ul h4{
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
@@ -314,9 +317,16 @@ section#seven img.serv{
 }
 input[type=text],
 input[type="email"], input[type="phone"] {
-    width: 400px;
+    width: 500px;
     height: 30px;
     padding: 4px;
+}
+input [type=checkbox] {
+    display: block;
+    padding: 20px;
+}
+.error{
+    color: red;
 }
 
 textarea {
@@ -699,6 +709,7 @@ footer{
         top: 50%;
         transform: translateY(-50%); */
         z-index: 999999;
+        cursor: pointer;
         display: inline-block;
         height: 5em;
         width: 5em;
@@ -708,17 +719,6 @@ footer{
         -webkit-transition: all .3s ease-in;
         transition: all .3s ease-in;
     }
-    
-    #prev { background-image: url('arrow-left-out.svg'); }
-    
-    #prev:hover { background-image: url('arrow-left-over.svg'); }
-    
-    #next {
-        right: 0;
-        background-image: url('arrow-right-out.svg');
-    }
-    
-    #next:hover { background-image: url('arrow-right-over.svg'); }
     /* Expanding Gallery*/
 #gallery{
     

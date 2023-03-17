@@ -42,7 +42,7 @@ $thisPage = "Services";
             </a>
           </button>
           <ul id="mobile" class="mobile-menu" style="display:none">
-            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
             <li><a href="./index.php">Home</a></li>
             <li><a href="./the_dream.php">The Dream</a></li>
             <li><a href="./portfolio.php">Portfolio</a></li>
@@ -93,19 +93,6 @@ $page = ucwords( $page ); // uppercase first letter of every word
             <li>Search Engine Optimization</li>
             <li>Traffic Analysis</li>
         </ul>
-    </section>
-    <section id="six">
-        <p>"Styles come and go. Good design is a language, not a style"</p>
-    </section>
-    <section id="four">
-        <h1>It's Always The Right Time time!</h1>
-        <p>Let's Get Your Creative Juices Flowing So Your Business Can Thrive</p>
-        <hr>
-        <p>We Work Endlessly To Help You Reach A Desired Outcome That <br>Will Be Sure To Set You Apart!</p><a href="#">
-            <button id="learn">
-                Learn More
-            </button>
-        </a>
     </section>
     <?php require("footer.php"); ?>       
 </body>
